@@ -27,9 +27,9 @@ runs:
   steps:
     - name: Install the Apple certificates
       env:
-        CERTIFICATES_P12: ${{ inputs.certificates-p12 }}
-        CERTIFICATES_PASSWORD: ${{ inputs.certificates-password }}
-        KEYCHAIN_PASSWORD: ${{ inputs.keychain-password }}
+        CERTIFICATES_P12: "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"
+        CERTIFICATES_PASSWORD: "a"
+        KEYCHAIN_PASSWORD: "a"
       run: |
         CERTIFICATE_PATH=$RUNNER_TEMP/apple-certificates.p12
         KEYCHAIN_PATH=$RUNNER_TEMP/frida-signing.keychain-db
@@ -67,28 +67,10 @@ runs:
           echo "FRIDA_VERSION=$(releng/frida_version.py)"
         ) >> $GITHUB_ENV
       shell: bash
-    - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v4
-      with:
-        aws-access-key-id: ${{ inputs.aws-access-key-id }}
-        aws-secret-access-key: ${{ inputs.aws-secret-access-key }}
-        aws-region: us-east-1
-    - name: Configure Cloudflare credentials
-      run: |
-        (
-          echo "defaults:"
-          echo "    domain: frida.re"
-          echo "    email: ${{ inputs.cloudflare-email }}"
-          echo "    token: ${{ inputs.cloudflare-token }}"
-        ) > ~/.cfcli.yml
-      shell: bash
     - name: Install Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
     - name: Install setuptools
       run: pip install setuptools
-      shell: bash
-    - name: Install cloudflare-cli
-      run: npm install -g cloudflare-cli
       shell: bash
